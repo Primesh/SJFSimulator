@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>  
+    <title>SGFSimulator</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="Main.js"></script>
+    <script type="text/javascript">
+        function myF()
+        {
+            console.log("Executing.......");
+            var pid=document.getElementById("PID").value;
+            //var burstTime=document.getElementById("burstTime").value;
+            console.log(pid);
+            //console.log(burstTime);
+
+            burstTime.value=pid;
+        }
+
+        function display(burstTime)
+        {
+                output=burstTime;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Shortest Job First Simulator</h1>
+    </div>
+
+    <section id="input">
+        <form>
+            <p>Process ID: <input type="text" id="PID" name="PID" value="p"></p>
+
+            <p>Burst Time: <input type="text" id="burstTime"></p>
+            <p><input type="button" id="buttonEnter" value="Enter" onclick="myF()"></p> 
+
+            
+        </form>
+    </section>
+
+
+    <section id="output">
+        
+    </section>
+
+
+
+
+</body>
+</html>
